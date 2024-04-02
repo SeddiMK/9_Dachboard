@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&_v=20240402150103" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240402150103">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+
+		<main class="page">
+			<aside class="aside">
+				<div class="aside__top top-aside">
+					<div class="top-aside__logo">
+						<picture><source srcset="img/2_logo.webp" type="image/webp"><img src="img/2_logo.png" alt="Logo Brend" class="top-aside__img"></picture>
+						<h2 class="top-aside__title">Web<span>EMaX</span></h2>
+					</div>
+					<div class="top-aside__close" id="close-btn">
+						<span class="material-icons-sharp">close</span>
+					</div>
+				</div>
+				<div class="aside__sidebar sidebar">
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">grid_view</span>
+						<h3 class="sidebar__title">Dashboard_Menu</h3>
+					</a>
+					<a href="#" class="sidebar__item-link active">
+						<span class="material-icons-sharp">person_outline</span>
+						<h3 class="sidebar__title">Customers</h3>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">receipt_long</span>
+						<h3 class="sidebar__title">Orders</h3>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">insights</span>
+						<h3 class="sidebar__title">Analytics</h3>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">mail_outline</span>
+						<h3 class="sidebar__title">Messages</h3>
+						<span class="sidebar__message-count">23</span>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">inventory</span>
+						<h3 class="sidebar__title">Products</h3>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">report_gmailerrorred</span>
+						<h3 class="sidebar__title">Reports</h3>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">settings</span>
+						<h3 class="sidebar__title">Settings</h3>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">add</span>
+						<h3 class="sidebar__title">Add Product</h3>
+					</a>
+					<a href="#" class="sidebar__item-link">
+						<span class="material-icons-sharp">logout</span>
+						<h3 class="sidebar__title">Logout</h3>
+					</a>
+
+				</div>
+			</aside>
+			<div class="main-page">
+				<h1 class="main-page__title">hello.<span>Max</span></h1>
+				<div class="main-page__date">
+					<input type="date">
+				</div>
+				<!--============= Cards top============= -->
+				<div class="main-page__insights">
+					<!-- Card -->
+					<div class="sales card-insights">
+						<span class="material-icons-sharp">analytics</span>
+						<div class="sales__middle middle">
+							<div class="middle__left">
+								<h3 class="middle__title">Total Sales</h3>
+								<h2 class="middle__price">$25.024</h2>
+							</div>
+							<div class="middle__progress-right">
+								<svg class="middle__svg">
+									<circle class="middle__circle" cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="middle__number">
+									<p>81%</p>
+								</div>
+							</div>
+						</div>
+						<small class="card-insights__text-small">Last 24 Hours</small>
+					</div>
+					<!--============= END Card SALES============= -->
+					<!-- Card -->
+					<div class="expenses card-insights">
+						<span class="material-icons-sharp">bar_chart</span>
+						<div class="expenses__middle middle">
+							<div class="middle__left">
+								<h3 class="middle__title">Total Expenses</h3>
+								<h2 class="middle__price">$14.016</h2>
+							</div>
+							<div class="middle__progress-right">
+								<svg class="middle__svg">
+									<circle class="middle__circle" cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="middle__number">
+									<p>62%</p>
+								</div>
+							</div>
+						</div>
+						<small class="card-insights__text-small">Last 24 Hours</small>
+					</div>
+					<!--============= END Card EXPENSES============= -->
+					<!-- Card -->
+					<div class="income card-insights">
+						<span class="material-icons-sharp">stacked_line_chart</span>
+						<div class="income__middle middle">
+							<div class="middle__left">
+								<h3 class="middle__title">Total Income</h3>
+								<h2 class="middle__price">$10.864</h2>
+							</div>
+							<div class="middle__progress-right">
+								<svg class="middle__svg">
+									<circle class="middle__circle" cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="middle__number">
+									<p>44%</p>
+								</div>
+							</div>
+						</div>
+						<small class="card-insights__text-small">Last 24 Hours</small>
+					</div>
+					<!--============= END Card INCOME============= -->
+				</div>
+				<!--============= END Cards============= -->
+				<div class="recent-order">
+					<h2 class="recent-order__title">Recent Orders</h2>
+					<table class="recent-order__table table">
+						<thead class="table__thead thead">
+							<tr class="thead__tr">
+								<th class="thead__th">Product Name</th>
+								<th class="thead__th">Product Number</th>
+								<th class="thead__th">Payment</th>
+								<th class="thead__th">Status</th>
+								<th class="thead__th"></th>
+							</tr>
+						</thead>
+						<tbody class="table__tbody tbody">
+							<!-- <tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr>
+							<tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr>
+							<tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr>
+							<tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr>
+							<tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr>
+							<tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr>
+							<tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr>
+							<tr class="tbody__tr">
+								<td class="tbody__td">Foldable Mini Drone</td>
+								<td class="tbody__td">85631</td>
+								<td class="tbody__td">Due</td>
+								<td class="tbody__td color--warning">Pending</td>
+								<td class="tbody__td color--primary">Details</td>
+							</tr> -->
+
+						</tbody>
+					</table>
+					<a href="#" class="recent-order__link-all">Show All</a>
+				</div>
+			</div>
+			<!--============= END Recent Order============= -->
+			<section class="right">
+				<div class="right__top top">
+					<button class="top__button" id="menu-btn">
+						<span class="material-icons-sharp">menu</span>
+					</button>
+					<div class="top__theme-toggler">
+						<span class="material-icons-sharp active">light_mode</span>
+						<span class="material-icons-sharp">dark_mode</span>
+					</div>
+					<div class="top__profile profile">
+						<div class="profile__info">
+							<h1 class="profile__title">hello, <span>Max</span></h1>
+							<small class="profile__text-muted text--muted">Admin</small>
+						</div>
+						<div class="profile__photo photo-profile">
+							<picture><source srcset="img/profile-2.webp" type="image/webp"><img class="photo-profile__img profile--photo" src="img/profile-2.jpg" alt="Photo profile"></picture>
+						</div>
+					</div>
+				</div>
+				<!-- END OF TOP -->
+				<div class="right__recent-updates recent-updates">
+					<h2 class="recent-updates__title">Recent Updates</h2>
+					<div class="recent-updates__updates">
+						<div class="recent-updates__udate">
+							<div class="photo-profile">
+								<picture><source srcset="img/profile-3.webp" type="image/webp"><img class="photo-profile__img profile--photo" src="img/profile-3.jpg" alt="Photo profile"></picture>
+							</div>
+							<div class="recent-updates__message message">
+								<p class="message__text"><span>Mike Tyson</span> recived this order of night lion tech GPS drone.</p>
+								<small class="message__text-muted text--muted">2 Minutes Ago</small>
+
+							</div>
+						</div>
+						<div class="recent-updates__udate">
+							<div class="photo-profile">
+								<picture><source srcset="img/profile-4.webp" type="image/webp"><img class="photo-profile__img profile--photo" src="img/profile-4.jpg" alt="Photo profile"></picture>
+							</div>
+							<div class="recent-updates__message message">
+								<p class="message__text"><span>Mike Tyson</span> recived this order of night lion tech GPS drone.</p>
+								<small class="message__text-muted text--muted">2 Minutes Ago</small>
+
+							</div>
+						</div>
+						<div class="recent-updates__udate">
+							<div class="photo-profile">
+								<picture><source srcset="img/profile-1.webp" type="image/webp"><img class="photo-profile__img profile--photo" src="img/profile-1.jpg" alt="Photo profile"></picture>
+							</div>
+							<div class="recent-updates__message message">
+								<p class="message__text"><span>Mike Tyson</span> recived this order of night lion tech GPS drone.</p>
+								<small class="message__text-muted text--muted">2 Minutes Ago</small>
+
+							</div>
+						</div>
+						<div class="recent-updates__udate">
+							<div class="photo-profile">
+								<picture><source srcset="img/profile-2.webp" type="image/webp"><img class="photo-profile__img profile--photo" src="img/profile-2.jpg" alt="Photo profile"></picture>
+							</div>
+							<div class="recent-updates__message message">
+								<p class="message__text"><span>Mike Tyson</span> recived this order of night lion tech GPS drone.</p>
+								<small class="message__text-muted text--muted">2 Minutes Ago</small>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END OF RECENT UPDATES -->
+				<div class="right__sales-analitics sales-analitics">
+					<h2 class="sales-analitics__title">Sales Analitics</h2>
+					<div class="sales-analitics__item online">
+						<div class="online__icon icon-right">
+							<span class="material-icons-sharp">shopping_cart</span>
+						</div>
+						<div class="sales-analitics__right">
+							<div class="sales-analitics__right-info">
+								<h3 class="sales-analitics__right-text">ONLINE ORDERS</h3>
+								<small class="sales-analitics__text-muted text--muted">Last 24 Hours</small>
+							</div>
+							<h5 class="sales-analitics__right-success color--success">+39%</h5>
+							<h3 class="sales-analitics__right-value">3849</h3>
+						</div>
+
+
+
+					</div>
+					<div class="sales-analitics__item offline">
+						<div class="offline__icon icon-right">
+							<span class="material-icons-sharp">local_mall</span>
+						</div>
+						<div class="sales-analitics__right">
+							<div class="sales-analitics__right-info">
+								<h3 class="sales-analitics__right-text">OFFLINE ORDERS</h3>
+								<small class="sales-analitics__text-muted text--muted">Last 24 Hours</small>
+							</div>
+							<h5 class="sales-analitics__right-dander color--danger">-17%</h5>
+							<h3 class="sales-analitics__right-value">1100</h3>
+						</div>
+
+
+
+					</div>
+					<div class="sales-analitics__item customers">
+						<div class="customers__icon icon-right">
+							<span class="material-icons-sharp">person</span>
+						</div>
+						<div class="sales-analitics__right">
+							<div class="sales-analitics__right-info">
+								<h3 class="sales-analitics__right-text">NEW CUSTOMERS</h3>
+								<small class="sales-analitics__text-muted text--muted">Last 24 Hours</small>
+							</div>
+							<h5 class="sales-analitics__right-dander color--success">+25%</h5>
+							<h3 class="sales-analitics__right-value">849</h3>
+						</div>
+
+					</div>
+					<div class="sales-analitics__item add-product">
+						<div class="add-product__block">
+							<span class="material-icons-sharp">add</span>
+							<h3 class="add-product__title">Add Product</h3>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20240402150103"></script>
+</body>
+
+</html>
